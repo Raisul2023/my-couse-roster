@@ -56,7 +56,7 @@ const Home = () => {
             {/* heading */}
             <h1 className='text-3xl md:text-4xl font-bold text-center py-5 md:py-8 lg:py-10 xl:pt-12 '>Course Registration</h1>
             {/* heading end */}
-            <div className='lg:flex  gap-6 px-5 md:px-9 lg:px-11 xl:px-16'>
+            <div className='flex flex-col lg:flex-row gap-6 px-5 md:px-9 lg:px-11 xl:px-16'>
                 <div className='card-container grid items-center md:grid-cols-2 lg:grid-cols-3 gap-6 lg:w-3/4'>
                     {
                         allCourses.map(course => <Card key={course.id} course={course} handleSelectCourse={handleSelectCourse} ></Card>)
